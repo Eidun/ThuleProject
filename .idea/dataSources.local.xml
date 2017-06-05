@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails ThuleProject: test" uuid="d90898c9-dad1-4f19-ba2b-93f5bbdbb22b">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="Rails ThuleProject: production" uuid="1022eb13-2065-4daf-bfad-962e950725b8">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>ThuleProject</user-name>
+    </data-source>
+    <data-source name="Rails ThuleProject: development" uuid="832eecd9-db65-48f6-b09f-99c75cb7d9a8">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+  </component>
+</project>
