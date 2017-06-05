@@ -16,5 +16,16 @@
       <first-sync>true</first-sync>
       <user-name>root</user-name>
     </data-source>
+    <data-source name="Rails Thule: production" uuid="181add3a-3e45-4985-af1c-81f61509762a">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>Thule</user-name>
+    </data-source>
+    <data-source name="Rails Thule: test" uuid="5946b956-9644-4f5f-92aa-6fb8fc4b00ac">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
+    <data-source name="Rails Thule: development" uuid="46367ce8-2639-4512-8415-66e9e86855cc">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+    </data-source>
   </component>
 </project>

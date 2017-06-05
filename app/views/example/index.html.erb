@@ -1,0 +1,11 @@
+<h1>Razones por las cuales Pablo se equivoca</h1>
+
+<tbody>
+<ul>
+<% @objectives.each do |objective| %>
+
+      <li><%= objective.name %></li>
+
+<% end %>
+</ul>
+<%= link_to 'Nueva razón', example_new_path %>

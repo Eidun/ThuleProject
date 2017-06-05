@@ -25,5 +25,29 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/ThuleProject_development</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Rails Thule: production" uuid="181add3a-3e45-4985-af1c-81f61509762a">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:Thule_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails Thule: test" uuid="5946b956-9644-4f5f-92aa-6fb8fc4b00ac">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:Thule_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails Thule: development" uuid="46367ce8-2639-4512-8415-66e9e86855cc">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:Thule_development</jdbc-url>
+    </data-source>
   </component>
 </project>

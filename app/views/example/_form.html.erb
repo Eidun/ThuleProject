@@ -1,0 +1,10 @@
+<%= form_for :objective, url: example_create_path do |f| %>
+    <p>
+      <%= f.label :nombre %><br>
+      <%= f.text_field :name %>
+    </p>
+
+    <p>
+      <%= f.submit "Y otra más!"%>
+    </p>
+<% end %>
