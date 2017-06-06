@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  resources :sins
+  resources :quests
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root 'example#index'
+  root 'sins#index'
   get 'example' => 'example#index'
   get 'example/new' => 'example#new'
   post 'example/create' => 'example#create'

@@ -10,7 +10,9 @@ class ExampleController < ApplicationController
 
   def create
     @objective = Objective.new(params[:objective].permit(:name, :observations))
-    @objective.save
+
+    PabloMailer.error_mail(@objective).deliver if @objective.save
+
     redirect_to example_path
   end
 
