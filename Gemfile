@@ -5,6 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+source 'http://insecure.rails-assets.org' do
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular'
+  gem 'rails-assets-leaflet'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
@@ -29,6 +34,13 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+#Animate assets
+gem 'rails-assets-animate.css', source: 'http://insecure.rails-assets.org'
+#Vivus assets
+gem 'rails-assets-vivus', source: 'http://insecure.rails-assets.org'
+#aos assets
+gem 'rails-assets-aos', source: 'http://insecure.rails-assets.org'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

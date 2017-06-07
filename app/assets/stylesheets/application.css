@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require leaflet
+ *= require animate.css
+ *= require aos
  */

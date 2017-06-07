@@ -1,4 +1,17 @@
 <%= form_for :objective, url: example_create_path do |f| %>
+
+    <% if @objective.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@objective.errors.count, "muestra") %> de tu estupidez:</h2>
+
+          <ul>
+            <% @objective.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
     <p>
       <%= f.label :nombre %><br>
       <%= f.text_field :name %>
