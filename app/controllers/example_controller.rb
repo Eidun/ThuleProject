@@ -18,4 +18,10 @@ class ExampleController < ApplicationController
     end
   end
 
+  def incredible_delete
+    @objectives = Objective.all
+    @objectives.each(&:destroy)
+    redirect_to example_path
+  end
+
 end

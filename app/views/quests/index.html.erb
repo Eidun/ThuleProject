@@ -2,12 +2,14 @@
 
 <h1>Quests</h1>
 
-<table>
+<table class="w3-table-all">
   <thead>
     <tr>
-      <th>Nombre</th>
-      <th>Terminada</th>
-      <th>Rango</th>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Location</th>
+      <th>Level</th>
+      <th>Finished</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,11 +18,13 @@
     <% @quests.each do |quest| %>
       <tr>
         <td><%= quest.name %></td>
+        <td><%= quest.category %></td>
+        <td><%= quest.location %></td>
+        <td><%= quest.level %></td>
         <td><%= quest.finished %></td>
-        <td><%= quest.rank %></td>
-        <td><%= link_to 'Detalles', quest %></td>
-        <td><%= link_to 'Editar', edit_quest_path(quest) %></td>
-        <td><%= link_to 'Borrar', quest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', quest %></td>
+        <td><%= link_to 'Edit', edit_quest_path(quest) %></td>
+        <td><%= link_to 'Destroy', quest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

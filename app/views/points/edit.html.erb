@@ -1,0 +1,6 @@
+<h1>Editing Point</h1>
+
+<%= render 'form', point: @point %>
+
+<%= link_to 'Show', quest_point_path(@point.quest.id ,@point) %> |
+<%= link_to 'Back', quest_points_path %>

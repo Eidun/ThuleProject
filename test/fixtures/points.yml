@@ -2,16 +2,12 @@
 
 one:
   name: MyString
-  description: MyString
   category: MyString
-  location: MyString
-  level: 1
-  finished: false
+  completed: false
+  quest: one
 
 two:
   name: MyString
-  description: MyString
   category: MyString
-  location: MyString
-  level: 1
-  finished: false
+  completed: false
+  quest: two

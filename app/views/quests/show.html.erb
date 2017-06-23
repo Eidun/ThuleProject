@@ -1,19 +1,36 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nombre:</strong>
   <%= @quest.name %>
 </p>
 
 <p>
-  <strong>Finished:</strong>
-  <%= @quest.finished %>
+  <strong>Descripción:</strong>
+  <%= @quest.description %>
 </p>
 
 <p>
-  <strong>Rank:</strong>
-  <%= @quest.rank %>
+  <strong>Categoría:</strong>
+  <%= @quest.category %>
 </p>
 
-<%= link_to 'Edit', edit_quest_path(@quest) %> |
-<%= link_to 'Back', quests_path %>
+<p>
+  <strong>Lugar:</strong>
+  <%= @quest.location %>
+</p>
+
+<p>
+  <strong>Nivel:</strong>
+  <%= @quest.level %>
+</p>
+
+<p>
+  <strong>Terminada:</strong>
+  <%= @quest.finished %>
+</p>
+
+<%= link_to 'Objetivos', quest_points_path(@quest) %>
+
+<%= link_to 'Editar', edit_quest_path(@quest) %> |
+<%= link_to 'Volver', quests_path %>

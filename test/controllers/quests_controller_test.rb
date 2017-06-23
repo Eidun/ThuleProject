@@ -17,7 +17,7 @@ class QuestsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create quest" do
     assert_difference('Quest.count') do
-      post quests_url, params: { quest: { finished: @quest.finished, name: @quest.name, rank: @quest.rank } }
+      post quests_url, params: { quest: { category: @quest.category, description: @quest.description, finished: @quest.finished, level: @quest.level, location: @quest.location, name: @quest.name } }
     end
 
     assert_redirected_to quest_url(Quest.last)
@@ -34,7 +34,7 @@ class QuestsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update quest" do
-    patch quest_url(@quest), params: { quest: { finished: @quest.finished, name: @quest.name, rank: @quest.rank } }
+    patch quest_url(@quest), params: { quest: { category: @quest.category, description: @quest.description, finished: @quest.finished, level: @quest.level, location: @quest.location, name: @quest.name } }
     assert_redirected_to quest_url(@quest)
   end
 

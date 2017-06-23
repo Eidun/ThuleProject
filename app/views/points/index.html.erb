@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Points</h1>
+
+<table class="w3-table-all w3-hoverable">
+  <thead>
+    <tr class="w3-black">
+      <th>Name</th>
+      <th>Category</th>
+      <th>Completed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @points.each do |point| %>
+      <tr>
+        <td><%= point.name %></td>
+        <td><%= point.category %></td>
+        <td><%= point.completed %></td>
+        <td><%= link_to 'Show', quest_point_path(point.quest.id ,point)%></td>
+        <td><%= link_to 'Edit', edit_quest_point_path(point.quest.id, point) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Point', new_quest_point_path %>
